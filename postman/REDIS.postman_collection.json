@@ -1,0 +1,291 @@
+{
+	"info": {
+		"_postman_id": "90963498-5bb7-44f3-98bc-a7110f854a6b",
+		"name": "REDIS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Insert-Key-Value",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"1\",\r\n    \"name\" : \"karthik\",\r\n    \"company\": \"amazon\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/programmer-string",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"programmer-string"
+					],
+					"query": [
+						{
+							"key": "Content-",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save-As-List",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"20\",\r\n    \"name\" : \"Programmer-list-1\",\r\n    \"company\" : \"sdk-1\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/programmers-list/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"programmers-list",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get programmers-list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/programmers-list/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"programmers-list",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Programmers Count",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/programmers-list/count",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"programmers-list",
+						"count"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "set-is-member",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"20\",\r\n    \"name\": \"Karthik\",\r\n    \"company\" : \"facebook\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/programmers-set/member",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"programmers-set",
+						"member"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Set-List-Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/programmers-set",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"programmers-set"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Set-Insert",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\r\n    \"id\" : \"10\",\r\n    \"name\" : \"Karthik\",\r\n    \"company\" : \"facebook\"\r\n},\r\n{\r\n    \"id\" : \"20\",\r\n    \"name\" : \"Karthik\",\r\n    \"company\" : \"facebook\"\r\n},\r\n{\r\n    \"id\" : \"20\",\r\n    \"name\" : \"Karthik\",\r\n    \"company\" : \"facebook\"\r\n}\r\n\r\n]"
+				},
+				"url": {
+					"raw": "http://localhost:8080/programmers-set",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"programmers-set"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get-Particular-Programmer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080//programmers-hash/50",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"",
+						"programmers-hash",
+						"50"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hash-Get-All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080//programmers-hash",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"",
+						"programmers-hash"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hash-Save",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"50\",\r\n    \"name\" : \"Karthik-1\",\r\n    \"company\" : \"Microsoft\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/programmers-hash",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"programmers-hash"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hash-Put",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"50\",\r\n    \"name\" : \"Karthik-updated\",\r\n    \"company\" : \"Microsoft-updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/programmers-hash",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"programmers-hash"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
